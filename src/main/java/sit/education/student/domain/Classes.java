@@ -1,6 +1,5 @@
 package sit.education.student.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,15 +17,11 @@ public class Classes {
         this.grade = grade;
     }
 
-    public String getData(){
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
-        return simpleDateFormat.format(start);
-    }
-
     @Override
     public String toString() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
         return "Classes{" +
-                "start=" + start +
+                "start=" + simpleDateFormat.format(start) +
                 ", grade=" + grade +
                 '}';
     }

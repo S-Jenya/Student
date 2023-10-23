@@ -21,10 +21,6 @@ public class Student {
         this.disciplines.add(disciplines);
     }
 
-    public String getListDiscipline() {
-        return disciplines.toString();
-    }
-
     public Discipline getByIndex(int i) {
         return disciplines.get(i);
     }

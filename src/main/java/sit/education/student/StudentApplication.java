@@ -12,8 +12,6 @@ import sit.education.student.service.DisciplineService;
 import sit.education.student.service.InstitutionService;
 import sit.education.student.service.StudentService;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 @Configuration
@@ -77,7 +75,7 @@ public class StudentApplication {
 				System.out.println("Некорректные данные!");
 			}
 
-		} while (flag == false);
+		} while (!flag);
 
 		// проводим занятия
 		flag = false;
@@ -125,7 +123,7 @@ public class StudentApplication {
 				System.out.println("Некорректные данные!");
 			}
 
-		} while (flag == false);
+		} while (!flag);
 
 		System.out.print("\n----- Завершение работы программы -----\n");
 	}
